@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5dd2ddc1-eb21-4f13-9980-73015b07659e" name="perezj@INTLT-JP 2012-03-17 20:05:55" runUser="DEV\perezj" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d9467836-0238-4767-b550-285b92392782">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="perezj_INTLT-JP 2012-03-17 20_05_55">
+      <DeploymentItem filename="C:\Users\PerezJ\Documents\Visual Studio 2010\Projects\Arepa\Arepa.Parser\bin\Debug\Arepa.Parser.dll" />
+      <DeploymentItem filename="C:\Users\PerezJ\Documents\Visual Studio 2010\Projects\Arepa\Arepa\bin\Debug\Arepa.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-17T20:05:55.3317870+11:00" queuing="2012-03-17T20:05:56.8088715+11:00" start="2012-03-17T20:05:57.0698864+11:00" finish="2012-03-17T20:06:35.8461043+11:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="INTLT-JP" outcome="Warning" timestamp="2012-03-17T20:05:55.3857901+11:00">
+        <Text>Deployment is currently disabled. The deployment item 'Arepa.Test\Sources\Console\ValidArguments.csv' on test 'Arepa.Test.AcceptanceTest.ManageConsoleArguments.AcceptValidArguments' was not deployed.</Text>
+      </RunInfo>
+      <RunInfo computerName="INTLT-JP" outcome="Error" timestamp="2012-03-17T20:06:35.8451043+11:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AcceptValidArguments" storage="c:\users\perezj\documents\visual studio 2010\projects\arepa\arepa.test\bin\debug\arepa.test.dll" id="4cbe52d7-509a-d621-290f-5bb92f726340">
+      <DeploymentItems>
+        <DeploymentItem filename="Arepa.Test\Sources\Console\ValidArguments.csv" />
+      </DeploymentItems>
+      <Execution id="24373b08-e36e-4aaf-a66c-407f9938d464" />
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/Arepa/Arepa.Test/bin/Debug/Arepa.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Arepa.Test.AcceptanceTest.ManageConsoleArguments, Arepa.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AcceptValidArguments" />
+      <DataSource connectionString="|DataDirectory|\Sources\Console\ValidArguments.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="ValidArguments#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4cbe52d7-509a-d621-290f-5bb92f726340" executionId="24373b08-e36e-4aaf-a66c-407f9938d464" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="24373b08-e36e-4aaf-a66c-407f9938d464" testId="4cbe52d7-509a-d621-290f-5bb92f726340" testName="AcceptValidArguments" computerName="INTLT-JP" duration="00:00:38.6192089" startTime="2012-03-17T20:05:57.2268954+11:00" endTime="2012-03-17T20:06:35.8461043+11:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24373b08-e36e-4aaf-a66c-407f9938d464">
+    </UnitTestResult>
+  </Results>
+</TestRun>

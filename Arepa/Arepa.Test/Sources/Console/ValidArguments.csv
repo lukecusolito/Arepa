@@ -1,0 +1,6 @@
+Argument,ProjectFileNameExpected,TestFileNameExpected,Description
+-ProjectDir TestProjectDirectories\DirectoryWith1CProjectFile\ -TestDir TestFiles\MSTest\FolderWithTestFiles\,ProjectCOne.csproj,MockMSTest1.trx,Valid Project Directory with valid test directory
+-TESTDIR TestFiles\MSTest\FolderWithTestFiles\ -PROJECTDIR TestProjectDirectories\DirectoryWith2CProjectFiles\,ProjectCOne.csproj,MockMSTest1.trx,Valid Project Directory with valid test directory (case-insensitive)
+-pROJECTdIR TestProjectDirectories\DirectoryWith2CProjectFilesAnd1VBProjectFile\ -tESTdIR TestFiles\MSTest\FolderWithTestFiles\,ProjectCOne.csproj,,MockMSTest1.trx,Valid Project Directory with valid test directory (case-insensitive)
+-ProjectDir TestProjectDirectories\DirectoryWith1CProjectFile -TestDir TestFiles\MSTest\FolderWithTestFiles\,ProjectCOne.csproj,MockMSTest1.trx,Valid Project Directory without the last backslash with valid test directory
+-ProjectDir TestProjectDirectories\DirectoryWith1CProjectFile\ -TestDir TestFiles\MSTest\FolderWithTestFiles,ProjectCOne.csproj,MockMSTest1.trx,Valid Project Directory with valid test directory without the last backslash 

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="da08f27e-9180-4ef0-9a77-fa8ca1dd664a" name="perezj@INTLT-JP 2012-03-20 11:31:31" runUser="DEV\perezj" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="439f2755-c443-4bab-b910-8cfcc2baf5aa">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="perezj_INTLT-JP 2012-03-20 11_31_31" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-20T11:31:31.0477360+11:00" queuing="2012-03-20T11:31:31.9057415+11:00" start="2012-03-20T11:31:31.9837420+11:00" finish="2012-03-20T11:31:38.1425953+11:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="6" passed="4" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CodedUITestMethod1" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\bin\debug\arepamocks.testvalidtestreport.dll" id="80170f90-7016-0f25-5f27-1b5857414de8">
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/ArepaMocks/ArepaMocks.TestValidTestReport/bin/Debug/ArepaMocks.TestValidTestReport.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.TestValidTestReport.CodedUITest1, ArepaMocks.TestValidTestReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="Scenario1" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\bin\debug\arepamocks.testvalidtestreport.dll" id="46df5543-d943-eaba-14dd-e93f5bc99d2d">
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/ArepaMocks/ArepaMocks.TestValidTestReport/bin/Debug/ArepaMocks.TestValidTestReport.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.TestValidTestReport.FeatureSuccess1, ArepaMocks.TestValidTestReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Scenario1" />
+    </UnitTest>
+    <UnitTest name="Scenario4" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\bin\debug\arepamocks.testvalidtestreport.dll" id="62a482b3-9479-57fa-623b-ef77aef9b591">
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/ArepaMocks/ArepaMocks.TestValidTestReport/bin/Debug/ArepaMocks.TestValidTestReport.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.TestValidTestReport.FeatureSuccess2, ArepaMocks.TestValidTestReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Scenario4" />
+    </UnitTest>
+    <OrderedTest name="orderedtest1" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\orderedtest1.orderedtest" id="075a59d5-f0a2-417a-844c-efd85c6f4c5f">
+      <Execution id="bb241559-1830-4d60-aa82-74634fa5df67" />
+      <TestLinks>
+        <TestLink id="f0324f69-4bc5-f242-304d-1c20cbaa0df4" name="BasicUnitTest1_TestMethod1" storage="bin\debug\arepamocks.testvalidtestreport.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="80170f90-7016-0f25-5f27-1b5857414de8" name="CodedUITestMethod1" storage="bin\debug\arepamocks.testvalidtestreport.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="46df5543-d943-eaba-14dd-e93f5bc99d2d" name="Scenario1" storage="bin\debug\arepamocks.testvalidtestreport.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="9b77ea79-a5be-7b12-a6aa-bd79011c7986" name="Scenario2" storage="bin\debug\arepamocks.testvalidtestreport.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="b0cb2a6d-e9ec-b5a3-96c6-643f85dd5b2f" name="Scenario3" storage="bin\debug\arepamocks.testvalidtestreport.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="62a482b3-9479-57fa-623b-ef77aef9b591" name="Scenario4" storage="bin\debug\arepamocks.testvalidtestreport.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="Scenario2" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\bin\debug\arepamocks.testvalidtestreport.dll" id="9b77ea79-a5be-7b12-a6aa-bd79011c7986">
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/ArepaMocks/ArepaMocks.TestValidTestReport/bin/Debug/ArepaMocks.TestValidTestReport.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.TestValidTestReport.FeatureSuccess1, ArepaMocks.TestValidTestReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Scenario2" />
+    </UnitTest>
+    <UnitTest name="Scenario3" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\bin\debug\arepamocks.testvalidtestreport.dll" id="b0cb2a6d-e9ec-b5a3-96c6-643f85dd5b2f">
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/ArepaMocks/ArepaMocks.TestValidTestReport/bin/Debug/ArepaMocks.TestValidTestReport.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.TestValidTestReport.FeatureSuccess2, ArepaMocks.TestValidTestReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Scenario3" />
+    </UnitTest>
+    <UnitTest name="BasicUnitTest1_TestMethod1" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks\arepamocks.testvalidtestreport\bin\debug\arepamocks.testvalidtestreport.dll" id="f0324f69-4bc5-f242-304d-1c20cbaa0df4">
+      <TestMethod codeBase="C:/Users/PerezJ/Documents/Visual Studio 2010/Projects/ArepaMocks/ArepaMocks.TestValidTestReport/bin/Debug/ArepaMocks.TestValidTestReport.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.TestValidTestReport.BasicUnitTest1, ArepaMocks.TestValidTestReport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicUnitTest1_TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="075a59d5-f0a2-417a-844c-efd85c6f4c5f" executionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="f0324f69-4bc5-f242-304d-1c20cbaa0df4" executionId="988fcd32-858e-4230-97ff-552c32a87122" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="80170f90-7016-0f25-5f27-1b5857414de8" executionId="b7f0eae2-decb-43a3-bc31-ebaf7185b531" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="46df5543-d943-eaba-14dd-e93f5bc99d2d" executionId="e22f2b6e-9368-4182-af53-62c75bef0e0d" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="9b77ea79-a5be-7b12-a6aa-bd79011c7986" executionId="8c668337-4c83-4ddd-8742-9802140d00f3" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="b0cb2a6d-e9ec-b5a3-96c6-643f85dd5b2f" executionId="1f51d52c-46fb-4489-8163-deb981fb4baa" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="62a482b3-9479-57fa-623b-ef77aef9b591" executionId="c624ab43-7c50-4f13-a88f-b5632ee5aece" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <TestResultAggregation executionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="075a59d5-f0a2-417a-844c-efd85c6f4c5f" testName="orderedtest1" computerName="INTLT-JP" duration="00:00:05.9501350" startTime="2012-03-20T11:31:32.1085428+11:00" endTime="2012-03-20T11:31:38.0725946+11:00" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb241559-1830-4d60-aa82-74634fa5df67">
+      <Counters error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" passed="4" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="988fcd32-858e-4230-97ff-552c32a87122" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="f0324f69-4bc5-f242-304d-1c20cbaa0df4" testName="BasicUnitTest1_TestMethod1" computerName="INTLT-JP" duration="00:00:00.0164390" startTime="2012-03-20T11:31:32.1241429+11:00" endTime="2012-03-20T11:31:32.3737445+11:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="988fcd32-858e-4230-97ff-552c32a87122">
+          <Output>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="b7f0eae2-decb-43a3-bc31-ebaf7185b531" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="80170f90-7016-0f25-5f27-1b5857414de8" testName="CodedUITestMethod1" computerName="INTLT-JP" duration="00:00:05.4752171" startTime="2012-03-20T11:31:32.3737445+11:00" endTime="2012-03-20T11:31:38.0225941+11:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7f0eae2-decb-43a3-bc31-ebaf7185b531">
+          <Output>
+            <DebugTrace>W, 5856, 21, 2012/03/20, 11:31:34.886, 33414788361, QTAgent32.exe, ExtensionFramework : A Technology Manager with name Web is already registered.
+E, 5856, 21, 2012/03/20, 11:31:36.118, 33418155047, QTAgent32.exe, LoadLibrary() : Unable to find the resource 37382 from assembly C:\Windows\system32\en-US\ieframe.dll.mui: Error1814
+E, 5856, 21, 2012/03/20, 11:31:36.118, 33418158948, QTAgent32.exe, LoadLibrary() : Unable to find the resource 41728 from assembly C:\Windows\system32\en-US\ieframe.dll.mui: Error1814
+E, 5856, 21, 2012/03/20, 11:31:36.118, 33418160314, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\en-US\ieframe.dll.mui: Error1814
+E, 5856, 21, 2012/03/20, 11:31:36.118, 33418161668, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\en-US\ieframe.dll.mui: Error1814
+E, 5856, 21, 2012/03/20, 11:31:36.118, 33418164145, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\en-US\ieframe.dll.mui: Error1814
+E, 5856, 21, 2012/03/20, 11:31:36.134, 33418210482, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\en-US\user32.dll.mui: Error1814
+W, 5856, 21, 2012/03/20, 11:31:36.652, 33419618037, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] SetValueAsEditBox "Just a test" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 5856, 21, 2012/03/20, 11:31:37.172, 33421054975, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Close'"
+\0&lt;/a&gt;
+W, 5856, 21, 2012/03/20, 11:31:37.792, 33422726772, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Don\'t Save'"
+\0&lt;/a&gt;
+W, 5856, 21, 2012/03/20, 11:31:38.012, 33423351059, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5856, 21, 2012/03/20, 11:31:38.022, 33423352038, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+W, 5856, 21, 2012/03/20, 11:31:38.022, 33423355580, QTAgent32.exe, SLPlugin : StopSession of the plugin called before StartSession
+</DebugTrace>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="e22f2b6e-9368-4182-af53-62c75bef0e0d" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="46df5543-d943-eaba-14dd-e93f5bc99d2d" testName="Scenario1" computerName="INTLT-JP" duration="00:00:00.0003724" startTime="2012-03-20T11:31:38.0225941+11:00" endTime="2012-03-20T11:31:38.0325942+11:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e22f2b6e-9368-4182-af53-62c75bef0e0d">
+          <Output>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="8c668337-4c83-4ddd-8742-9802140d00f3" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="9b77ea79-a5be-7b12-a6aa-bd79011c7986" testName="Scenario2" computerName="INTLT-JP" duration="00:00:00.0001521" startTime="2012-03-20T11:31:38.0425943+11:00" endTime="2012-03-20T11:31:38.0425943+11:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c668337-4c83-4ddd-8742-9802140d00f3">
+          <Output>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="1f51d52c-46fb-4489-8163-deb981fb4baa" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="b0cb2a6d-e9ec-b5a3-96c6-643f85dd5b2f" testName="Scenario3" computerName="INTLT-JP" duration="00:00:00.0221925" startTime="2012-03-20T11:31:38.0425943+11:00" endTime="2012-03-20T11:31:38.0725946+11:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f51d52c-46fb-4489-8163-deb981fb4baa">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.IsTrue failed. This test didn't pass because is its intention</Message>
+              <StackTrace>   at ArepaMocks.TestValidTestReport.FeatureSuccess2.Scenario3() in C:\Users\PerezJ\Documents\Visual Studio 2010\Projects\ArepaMocks\ArepaMocks.TestValidTestReport\FeatureSuccess2.cs:line 86
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <TestResult executionId="c624ab43-7c50-4f13-a88f-b5632ee5aece" parentExecutionId="bb241559-1830-4d60-aa82-74634fa5df67" testId="62a482b3-9479-57fa-623b-ef77aef9b591" testName="Scenario4" computerName="INTLT-JP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c624ab43-7c50-4f13-a88f-b5632ee5aece" />
+      </InnerResults>
+    </TestResultAggregation>
+  </Results>
+</TestRun>

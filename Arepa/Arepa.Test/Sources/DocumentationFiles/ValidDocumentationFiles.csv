@@ -1,0 +1,7 @@
+DocumentationFileName,TotalFeatures,TotalScenarios,Description
+DocumentationFiles\ArepaMocks.TestValidDocumentationWith1Scenario1Feature.XML,1,1,Valid documentation file with one total feature and one total scenario
+DocumentationFiles\ArepaMocks.TestValidDocumentationWith2Scenario1Feature.XML,1,2,Valid documentation file with one total feature and two total scenarios
+DocumentationFiles\ArepaMocks.TestValidDocumentationWith2Scenario2Feature.XML,2,2,Valid documentation file with two total features and two total scenarios
+DocumentationFiles\ArepaMocks.TestValidDocumentationWith3Scenario2Feature.XML,2,3,Valid documentation file with two total features and three total scenarios
+DocumentationFiles\ArepaMocks.TestValidDocumentationWith4Scenario2Feature.XML,2,4,Valid documentation file with two total features and four total scenarios
+DocumentationFiles\ArepaMocks.TestValidDoc4Scenario2FeatureCaseInsensitive.XML,2,4,Valid documentation file with two total features and four total scenarios (case-insensitive)

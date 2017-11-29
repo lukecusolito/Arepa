@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArepaMocks.TestScenarioWithoutScenarioDescription</name>
+    </assembly>
+    <members>
+        <member name="T:ArepaMocks.TestScenarioWithoutScenarioDescription.UnitTest1">
+            <summary>
+            Summary description for UnitTest1
+            </summary>
+        </member>
+        <member name="P:ArepaMocks.TestScenarioWithoutScenarioDescription.UnitTest1.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:ArepaMocks.TestScenarioWithoutScenarioDescription.AddTwoNumbers">
+            <summary>
+            @Feature: Add Two Numbers
+            </summary>
+            <remarks>
+            As lazy user 
+            I want to add two numbers 
+            so that I don't need to use my brain
+            </remarks>
+        </member>
+        <member name="M:ArepaMocks.TestScenarioWithoutScenarioDescription.AddTwoNumbers.Add_Two_Valid_Numbers">
+            <summary>
+            @Scenario: Add two valid numbers
+            </summary>
+        </member>
+    </members>
+</doc>

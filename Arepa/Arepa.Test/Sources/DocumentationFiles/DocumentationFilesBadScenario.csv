@@ -1,0 +1,4 @@
+DocumentationFileName,Description,ErrorMsg
+DocumentationFiles\ArepaMocks.TestScenarioWithoutTitle.XML,Documentation file with @Scenario: but not title,StringErrorNoTitleOnScenario
+DocumentationFiles\ArepaMocks.TestScenarioWithoutScenarioDescription.XML,Documentation file with @Scenario: and title but not remarks,StringErrorNoScenarioDescriptionOnMethod
+DocumentationFiles\ArepaMocks.TestScenarioWithRemarksButNotScenarioDesc.XML,"Documentation file with @Scenario:, title and remarks but nothing in remarks",StringErrorNoScenarioDescriptionOnMethod

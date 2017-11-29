@@ -1,0 +1,14 @@
+Argument,Description,ErrorMsg
+null,no arguments at all,StringErrorInvalidArguments
+          ,10 blank spaces,StringErrorInvalidArguments
+,Blank,StringErrorInvalidArguments
+-ProjectDir c:\,Only one valid argument,StringErrorNoProjectFileFound
+-ProjectDir xxx,Only one invalid argument,StringErrorNoProjectFileFound
+-ProjectDir invalidname -TestDir c:\,Two parameter with first invalid,StringErrorNoProjectFileFound
+-ProjectDir    -TestDir    ,Two parameters without value only black spaces,StringErrorNoProjectFileFound
+-ProjectDir c:\ -TestDir invalidPath,Two parameter with second invalid,StringErrorNoProjectFileFound
+c:\          ,One argument followed by 10 blank spaces,StringErrorInvalidArguments
+c:\ d:\,Invalid imput,StringErrorInvalidArguments
+-ProjectDir http://jperez.net/arepa/ -TestDir c:\,Two parameter with first invalid,StringErrorNoProjectFileFound
+-ProjectDir c:\ -TestDir http://jperez.net/arepa/,Two parameter with first invalid,StringErrorNoProjectFileFound
+-TestDir invalidPath -ProjectDir c:\,Invalid test dir,StringErrorNoMSTestFileFound

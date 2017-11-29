@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArepaMocks.TestWithoutFeatures</name>
+    </assembly>
+    <members>
+        <member name="T:ArepaMocks.TestWithoutFeatures.UnitTest1">
+            <summary>
+            Summary description for UnitTest1
+            </summary>
+        </member>
+        <member name="P:ArepaMocks.TestWithoutFeatures.UnitTest1.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+    </members>
+</doc>

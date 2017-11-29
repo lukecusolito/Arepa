@@ -1,0 +1,4 @@
+DocumentationFileName,Description,ErrorMsg
+DocumentationFiles\ArepaMocks.TestFeatureWithoutTitle.XML,Documentation file with @Feature: but not title,StringErrorNoTitleFoundOnFeature
+DocumentationFiles\ArepaMocks.TestFeatureWithoutUserStory.XML,Documentation file with @Feature: and title but not remarks,StringErrorNoUserStoryOnFeature
+DocumentationFiles\ArepaMocks.TestFeatureWithRemarksButNotUserStory.XML,"Documentation file with @Feature:, title and remarks but nothing in remarks",StringErrorNoUserStoryOnFeature

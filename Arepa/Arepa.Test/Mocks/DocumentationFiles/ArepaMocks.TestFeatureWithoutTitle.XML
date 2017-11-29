@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArepaMocks.TestFeatureWithoutTitle</name>
+    </assembly>
+    <members>
+        <member name="T:ArepaMocks.TestFeatureWithoutTitle.UnitTest1">
+            <summary>
+            Summary description for UnitTest1
+            </summary>
+        </member>
+        <member name="P:ArepaMocks.TestFeatureWithoutTitle.UnitTest1.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:ArepaMocks.TestFeatureWithoutTitle.AddTwoNumbers">
+            <summary>
+            @Feature: 
+            </summary>
+            <remarks>
+            As lazy user I want to add two numbers so that I don't need to use my brain 
+            </remarks>
+        </member>
+        <member name="M:ArepaMocks.TestFeatureWithoutTitle.AddTwoNumbers.Add_Two_Valid_Numbers">
+            <summary>
+            @Scenario: Add two valid numbers
+            </summary>
+            <remarks>
+            Given a new Add Calculator
+            When I enter two numbers on screen
+            Then the result on the screen should be the sum of those two numbers
+            </remarks>
+        </member>
+    </members>
+</doc>

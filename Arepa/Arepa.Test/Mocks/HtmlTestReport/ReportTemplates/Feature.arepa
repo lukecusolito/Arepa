@@ -1,0 +1,13 @@
+﻿ <p>
+        [FeatureTitle]</p>
+    <p>
+        [FeatureUserStory]</p>
+    <p>
+        Total scenarios [FeatureTotalScenarios]</p>
+    <p>
+        Scenarios passed [FeatureScenariosPassed]</p>
+    <p>
+        Succes rate 
+        [FeatureSuccessRate]</p>
+        <h3>Scenarios [see all]</h3>
+    <p>[ScenarioSection]</p>

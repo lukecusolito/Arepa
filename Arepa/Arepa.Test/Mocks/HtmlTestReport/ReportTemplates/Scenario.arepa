@@ -1,0 +1,8 @@
+﻿<p>
+        [ScenarioTitle]</p>
+    <p>
+        [ScenarioDescription]</p>
+    <p>
+        Passed [ScenarioPassed]</p>
+    <p>
+        [ScenarioErrorDescription]</p>

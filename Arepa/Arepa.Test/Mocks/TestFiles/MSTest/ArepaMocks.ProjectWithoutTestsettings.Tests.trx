@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b02740de-c0cd-497d-a788-b5d9ba70914b" name="perezj@INTLT-JP 2012-04-01 08:40:39" runUser="DEV\perezj" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="33d3e17d-1c72-45a5-9715-13316e732715">
+    <Deployment runDeploymentRoot="perezj_INTLT-JP 2012-04-01 08_40_39">
+      <DeploymentItem filename="c:\users\perezj\documents\visual studio 2010\Projects\ArepaMocks.ProjectWithoutTestsettings\ArepaMocks.ProjectWithoutTestsettings\bin\ArepaMocks.ProjectWithoutTestsettings.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-01T08:40:39.3855923+10:00" queuing="2012-04-01T08:40:40.2255934+10:00" start="2012-04-01T08:40:40.3755937+10:00" finish="2012-04-01T08:40:40.7505942+10:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IndexPageAvailable" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks.projectwithouttestsettings\arepamocks.projectwithouttestsettings.tests\bin\debug\arepamocks.projectwithouttestsettings.tests.dll" id="ba321d24-5cf7-c859-c12e-45272bc92958">
+      <Execution id="815e5435-1c4f-477d-a9b9-e0c13361f201" />
+      <TestMethod codeBase="c:/users/perezj/documents/visual studio 2010/Projects/ArepaMocks.ProjectWithoutTestsettings/ArepaMocks.ProjectWithoutTestsettings.Tests/bin/Debug/ArepaMocks.ProjectWithoutTestsettings.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.ProjectWithoutTestsettings.Tests.Controllers.HomeControllerTest, ArepaMocks.ProjectWithoutTestsettings.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPageAvailable" />
+    </UnitTest>
+    <UnitTest name="About" storage="c:\users\perezj\documents\visual studio 2010\projects\arepamocks.projectwithouttestsettings\arepamocks.projectwithouttestsettings.tests\bin\debug\arepamocks.projectwithouttestsettings.tests.dll" id="1dd7036a-d8d4-e684-bc8a-7ba42c7675b4">
+      <Execution id="fca57093-4377-441a-b2de-6ed43d814153" />
+      <TestMethod codeBase="c:/users/perezj/documents/visual studio 2010/Projects/ArepaMocks.ProjectWithoutTestsettings/ArepaMocks.ProjectWithoutTestsettings.Tests/bin/Debug/ArepaMocks.ProjectWithoutTestsettings.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArepaMocks.ProjectWithoutTestsettings.Tests.Controllers.HomeControllerTest, ArepaMocks.ProjectWithoutTestsettings.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1dd7036a-d8d4-e684-bc8a-7ba42c7675b4" executionId="fca57093-4377-441a-b2de-6ed43d814153" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba321d24-5cf7-c859-c12e-45272bc92958" executionId="815e5435-1c4f-477d-a9b9-e0c13361f201" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fca57093-4377-441a-b2de-6ed43d814153" testId="1dd7036a-d8d4-e684-bc8a-7ba42c7675b4" testName="About" computerName="INTLT-JP" duration="00:00:00.0736895" startTime="2012-04-01T08:40:40.3955937+10:00" endTime="2012-04-01T08:40:40.6855941+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fca57093-4377-441a-b2de-6ed43d814153">
+    </UnitTestResult>
+    <UnitTestResult executionId="815e5435-1c4f-477d-a9b9-e0c13361f201" testId="ba321d24-5cf7-c859-c12e-45272bc92958" testName="IndexPageAvailable" computerName="INTLT-JP" duration="00:00:00.0344219" startTime="2012-04-01T08:40:40.6855941+10:00" endTime="2012-04-01T08:40:40.7205941+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="815e5435-1c4f-477d-a9b9-e0c13361f201">
+    </UnitTestResult>
+  </Results>
+</TestRun>

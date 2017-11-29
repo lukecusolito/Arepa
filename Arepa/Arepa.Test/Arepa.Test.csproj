@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC42E6D6-6A11-491E-97E6-8DD4F115A237}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arepa.Test</RootNamespace>
+    <AssemblyName>Arepa.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Arepa.Test.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Schema, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Data.Schema.UnitTesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptanceTest\GenerateHtmlTestReport.cs" />
+    <Compile Include="AcceptanceTest\ManageConsoleArguments.cs" />
+    <Compile Include="AcceptanceTest\ManageConsoleOutputs.cs" />
+    <Compile Include="AcceptanceTest\ParseDocumentationFile.cs" />
+    <Compile Include="AcceptanceTest\ParseTestReportFile.cs" />
+    <Compile Include="Helper\TestEnvironment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mocks\TestFiles\MSTest\FolderWithoutFiles\" />
+    <Folder Include="Mocks\TestProjectDirectories\DirectoryWithoutFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mocks\HtmlTestReport\ReportProjects\ArepaMocks.TestValidTestReport\TestResults\ArepaMocks.TestValidTestReport.trx" />
+    <None Include="Mocks\HtmlTestReport\ReportProjects\ArepaMocks.TestWithHTMLTags\TestResults\ArepaMocks.TestWithHTMLTags.trx" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\TestReportWithKeyRepeated.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\ScenarioWithKeyRepeated.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\FeatureWithKeyRepeated.arepa">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\TestReportWithoutFeatureSection.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\FeatureWithoutScenarioSection.arepa">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\TestReportLowerCase.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\ScenarioLowerCase.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\FeatureLowerCase.arepa">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\TestReportUpperCase.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\ScenarioUpperCase.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\FeatureUpperCase.arepa">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\Feature.arepa">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\Scenario.arepa" />
+    <None Include="Mocks\HtmlTestReport\ReportTemplates\TestReport.arepa" />
+    <None Include="Mocks\TestFiles\MSTest\ArepaMocks.ProjectWithoutTestsettings.Tests.trx" />
+    <None Include="Mocks\TestFiles\MSTest\FolderWithTestFiles\AA1.trx" />
+    <None Include="Mocks\TestFiles\MSTest\FolderWithTestFiles\AA2.trx" />
+    <None Include="Mocks\TestFiles\MSTest\FolderWithTestFiles\MockMSTest1.trx" />
+    <None Include="Mocks\TestFiles\MSTest\MSTestReport.trx" />
+    <None Include="Sources\HtmlTestReport\ValidReportTemplates.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\Console\ValidProjectDirectories.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\Console\InvalidProjectDirectories.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\Console\ValidArguments.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\DocumentationFiles\ValidDocumentationFiles.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\Console\InvalidArguments.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\DocumentationFiles\DocumentationFilesBadScenario.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\DocumentationFiles\DocumentationFilesBadFeature.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sources\Console\InvalidTestDirectories.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arepa.Parser\Arepa.Parser.csproj">
+      <Project>{14D42486-774B-414B-A5FF-5A2169E24A6D}</Project>
+      <Name>Arepa.Parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arepa\Arepa.csproj">
+      <Project>{F2712FF6-EC26-4EA6-BE88-716E29519429}</Project>
+      <Name>Arepa</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mocks\ArepaMocks.TestCProjectWithoutDocumentation.csproj">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestFeatureWithoutTitle.XML">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestFeatureWithoutUserStory.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestFeatureWithRemarksButNotUserStory.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestScenarioWithoutScenarioDescription.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestScenarioWithoutTitle.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestScenarioWithRemarksButNotScenarioDesc.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestValidDoc4Scenario2FeatureCaseInsensitive.XML">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestValidDocumentationWith1Scenario1Feature.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestValidDocumentationWith2Scenario1Feature.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestValidDocumentationWith2Scenario2Feature.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestValidDocumentationWith3Scenario2Feature.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestValidDocumentationWith4Scenario2Feature.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestWithoutFeatures.XML" />
+    <Content Include="Mocks\DocumentationFiles\ArepaMocks.TestWithoutScenarios.XML" />
+    <Content Include="Mocks\HtmlTestReport\ReportProjects\ArepaMocks.TestValidTestReport\ArepaMocks.TestValidTestReport.csproj" />
+    <Content Include="Mocks\HtmlTestReport\ReportProjects\ArepaMocks.TestValidTestReport\bin\Debug\ArepaMocks.TestValidTestReport.XML" />
+    <Content Include="Mocks\HtmlTestReport\ReportProjects\ArepaMocks.TestWithHTMLTags\ArepaMocks.TestWithHTMLTags.csproj" />
+    <Content Include="Mocks\HtmlTestReport\ReportProjects\ArepaMocks.TestWithHTMLTags\bin\Debug\ArepaMocks.TestWithHTMLTags.XML" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith1CProjectFileAnd1VBProjectFile\ProjectCOne.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith1CProjectFileAnd1VBProjectFile\ProjectVBOne.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith1CProjectFile\ProjectCOne.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith1VBProjectFile\ProjectVBOne.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd1VBProjectFile\ProjectCOne.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd1VBProjectFile\ProjectCTwo.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd1VBProjectFile\ProjectVBOne.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd2VBProjectFile\ProjectCOne.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd2VBProjectFile\ProjectCTwo.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd2VBProjectFile\ProjectVBOne.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFilesAnd2VBProjectFile\ProjectVBTwo.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFiles\ProjectCOne.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2CProjectFiles\ProjectCTwo.csproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2VBProjectFiles\ProjectVBOne.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWith2VBProjectFiles\ProjectVBTwo.vbproj" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWithFilesButNotProjectFiles\Test1.txt" />
+    <Content Include="Mocks\TestProjectDirectories\DirectoryWithFilesButNotProjectFiles\Test2.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

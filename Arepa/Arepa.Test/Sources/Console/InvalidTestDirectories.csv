@@ -1,0 +1,3 @@
+TestDirectory,ErrorMsg,Description
+NonExistingDirectory\,StringErrorNoMSTestFileFound,Non existing directory
+TestFiles\MSTest\FolderWithoutFiles\,StringErrorNoMSTestFileFound,Directory without MSTest files

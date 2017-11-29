@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArepaMocks.TestWithHTMLTags</name>
+    </assembly>
+    <members>
+        <member name="T:ArepaMocks.TestWithHTMLTags.UnitTest1">
+            <summary>
+            Summary description for UnitTest1
+            </summary>
+        </member>
+        <member name="P:ArepaMocks.TestWithHTMLTags.UnitTest1.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:ArepaMocks.TestWithHTMLTags.AddTwoNumbers">
+            <summary>
+            @Feature: Add Two <strong>Numbers</strong>
+            </summary>
+            <remarks>
+            As lazy user 
+            I want to add <h1>two</h1> numbers 
+            so that I don't need to use my brain
+            </remarks>
+        </member>
+        <member name="M:ArepaMocks.TestWithHTMLTags.AddTwoNumbers.Add_Two_Valid_Numbers">
+            <summary>
+            @Scenario: Add <i>two</i> valid numbers
+            </summary>
+            <remarks>
+            Given a new Add Calculator
+            When I enter two numbers on screen
+            Then the <h2>result</h2> on the screen should be the sum of those two numbers
+            </remarks>
+        </member>
+    </members>
+</doc>

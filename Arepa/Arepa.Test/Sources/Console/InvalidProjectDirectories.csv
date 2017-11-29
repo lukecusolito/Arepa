@@ -1,0 +1,4 @@
+ProjectDirectory,Description,ErrorMsg
+TestProjectDirectories\dummyPath\92s34f9g23ss2g342\,Non existing directory,StringErrorNoProjectFileFound
+TestProjectDirectories\DirectoryWithFilesButNotProjectFiles\,Directory with files but not project files,StringErrorNoProjectFileFound
+TestProjectDirectories\DirectoryWithoutFiles\,Directory without files,StringErrorNoProjectFileFound

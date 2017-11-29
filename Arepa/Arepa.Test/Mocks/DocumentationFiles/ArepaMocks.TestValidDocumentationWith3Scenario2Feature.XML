@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArepaMocks.TestValidDocumentationWith3Scenario2Feature</name>
+    </assembly>
+    <members>
+        <member name="T:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.UnitTest1">
+            <summary>
+            Summary description for UnitTest1
+            </summary>
+        </member>
+        <member name="P:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.UnitTest1.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.AddTwoNumbers">
+            <summary>
+            @Feature: Add Two Numbers
+            </summary>
+            <remarks>
+            As lazy user 
+            I want to add two numbers 
+            so that I don't need to use my brain
+            </remarks>
+        </member>
+        <member name="M:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.AddTwoNumbers.Add_Two_Valid_Numbers">
+            <summary>
+            @Scenario: Add two valid numbers
+            </summary>
+            <remarks>
+            Given a new Add Calculator
+            When I enter two numbers on screen
+            Then the result on the screen should be the sum of those two numbers
+            </remarks>
+        </member>
+        <member name="M:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.AddTwoNumbers.AddTwoInvalidNumbers">
+            <summary>
+            @Scenario: Add two invalid numbers
+            </summary>
+            <remarks>
+            Given a new Add Calculator
+            When I enter the first value as an invalid number
+            OR I enter the send value as an invalid number
+            Then the result on the screen should be an error
+            </remarks>
+        </member>
+        <member name="T:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.SubstractTwoNumbers">
+            <summary>
+            @Feature: Substract Two Numbers
+            </summary>
+            <remarks>
+            As lazy user 
+            I want to substract two numbers 
+            so that I don't need to use my brain
+            </remarks>
+        </member>
+        <member name="M:ArepaMocks.TestValidDocumentationWith3Scenario2Feature.SubstractTwoNumbers.Substract_Two_Valid_Numbers">
+            <summary>
+            @Scenario: Substract two valid numbers
+            </summary>
+            <remarks>
+            Given a new Add Calculator
+            When I enter two numbers on screen
+            Then the result on the screen should be the subtraction of those two numbers
+            </remarks>
+        </member>
+    </members>
+</doc>

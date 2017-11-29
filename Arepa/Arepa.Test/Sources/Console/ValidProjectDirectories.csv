@@ -1,0 +1,6 @@
+ProjectDirectory,ProjectFileExpected,Description
+TestProjectDirectories\DirectoryWith1CProjectFile\,ProjectCOne.csproj,Directory with one c# project file
+TestProjectDirectories\DirectoryWith1CProjectFileAnd1VBProjectFile\,ProjectCOne.csproj,Directory with one c# project file and one VB project file
+TestProjectDirectories\DirectoryWith2CProjectFiles\,ProjectCOne.csproj,Directory with two c# project files
+TestProjectDirectories\DirectoryWith2CProjectFilesAnd1VBProjectFile\,ProjectCOne.csproj,Directory with two c# project files and one VB project file
+TestProjectDirectories\DirectoryWith2CProjectFilesAnd2VBProjectFile\,ProjectCOne.csproj,Directory with two c# project files and twp VB project files

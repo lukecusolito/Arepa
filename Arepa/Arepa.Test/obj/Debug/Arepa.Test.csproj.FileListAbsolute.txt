@@ -1,0 +1,2 @@
+C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa.Test\bin\Debug\Arepa.Test.XML
+C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa.Test\obj\Debug\Arepa.Test.csprojResolveAssemblyReference.cache
