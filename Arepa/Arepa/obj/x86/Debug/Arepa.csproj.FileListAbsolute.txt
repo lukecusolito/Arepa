@@ -1,8 +1,0 @@
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\bin\Debug\Arepa.XML
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\bin\Debug\Arepa.exe
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\bin\Debug\Arepa.pdb
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\bin\Debug\Arepa.Parser.dll
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\bin\Debug\Arepa.Parser.pdb
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\obj\x86\Debug\Arepa.csprojResolveAssemblyReference.cache
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\obj\x86\Debug\Arepa.exe
-C:\Users\Luke\Desktop\arepa-19515\Arepa\Arepa\obj\x86\Debug\Arepa.pdb
