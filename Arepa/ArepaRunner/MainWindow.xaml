@@ -20,7 +20,7 @@
         <TextBox x:Name="txt_OutputDir" HorizontalAlignment="Left" Height="23" Margin="157,92,0,0" VerticalAlignment="Top" Width="430" IsReadOnly="True"/>
         <TextBox x:Name="txt_TestResultLocation" HorizontalAlignment="Left" Height="23" Margin="157,118,0,0" VerticalAlignment="Top" Width="430" IsReadOnly="True"/>
         <TextBox x:Name="txt_TestAssembly" HorizontalAlignment="Left" Height="23" Margin="157,144,0,0" VerticalAlignment="Top" Width="430" IsReadOnly="True"/>
-        <TextBox x:Name="txt_Output" HorizontalAlignment="Left" Height="237" Margin="10,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="577" IsReadOnly="True" Text="{Binding Path=OutputString}" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="txt_Output" HorizontalAlignment="Left" Height="237" Margin="10,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="577" IsReadOnly="True" Text="{Binding Path=OutputString}" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TextChanged="txt_Output_TextChanged"/>
         <Button x:Name="btn_TestAssembly" Content="..." HorizontalAlignment="Left" Margin="592,144,0,0" VerticalAlignment="Top" Width="75" Height="23                 " Click="btn_TestAssembly_Click"/>
         <Button x:Name="btn_TestResultsLocation" Content="..." HorizontalAlignment="Left" Margin="592,118,0,0" VerticalAlignment="Top" Width="75" Height="23                 " Click="btn_TestResultsLocation_Click"/>
         <Button x:Name="btn_OutputDir" Content="..." HorizontalAlignment="Left" Margin="592,92,0,0" VerticalAlignment="Top" Width="75" Height="23                 " Click="btn_OutputDir_Click"/>

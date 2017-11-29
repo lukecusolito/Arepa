@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 
@@ -80,17 +81,24 @@ namespace ArepaRunner
             }
         }
 
-        private void btn_Run_Click(object sender, RoutedEventArgs e)
+        private async void btn_Run_Click(object sender, RoutedEventArgs e)
         {
             app.Args.TestCategory = txt_TestCategory.Text;
 
-            Runner.Start(app.Args, output);
+            ToggleButtonsActive(false);
+            await Task.Run(() => Runner.Start(app.Args, output));
+            ToggleButtonsActive(true);
         }
 
         private void btn_Reports_Click(object sender, RoutedEventArgs e)
         {
             var dir = Directory.GetCurrentDirectory() + "\\Reports";
             Process.Start(@dir);
+        }
+
+        private void txt_Output_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            txt_Output.ScrollToEnd();
         }
 
         #region Helper Methods
@@ -101,6 +109,16 @@ namespace ArepaRunner
             this.txt_OutputDir.Text = app.Args.OutputDir;
             this.txt_TestResultLocation.Text = app.Args.TestResultsDir;
             this.txt_TestAssembly.Text = app.Args.AssemblyFile;
+        }
+
+        private void ToggleButtonsActive(bool active)
+        {
+            this.btn_TestProjectDir.IsEnabled = active;
+            this.btn_OutputDir.IsEnabled = active;
+            this.btn_Run.IsEnabled = active;
+            this.btn_TestAssembly.IsEnabled = active;
+            this.btn_TestProjFile.IsEnabled = active;
+            this.btn_TestResultsLocation.IsEnabled = active;
         }
         #endregion
     }
