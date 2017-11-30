@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls.Primitives;
@@ -92,7 +93,11 @@ namespace ArepaRunner
 
         private void btn_Reports_Click(object sender, RoutedEventArgs e)
         {
-            var dir = Directory.GetCurrentDirectory() + "\\Reports";
+            string codeBase = Assembly.GetExecutingAssembly().CodeBase;
+            UriBuilder uri = new UriBuilder(codeBase);
+            string path = Uri.UnescapeDataString(uri.Path);
+            string dir = Path.GetDirectoryName(path) + "\\Reports";
+            Directory.CreateDirectory(dir);
             Process.Start(@dir);
         }
 
