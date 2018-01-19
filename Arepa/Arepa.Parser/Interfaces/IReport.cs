@@ -19,7 +19,8 @@ namespace Arepa.Parser
         /// Saves a string into an html file
         /// </summary>
         /// <param name="htmlContent">content of the file</param>
+        /// <param name="testCategory">category of the content</param>
         /// <returns>Report file name</returns>
-        string SaveReportOnDisc(string htmlContent);
+        string SaveReportOnDisc(string htmlContent, string testCategory);
     }
 }

@@ -98,7 +98,7 @@ namespace Arepa
                     Output.WriteEndingMessage(startingTime);
                     return;
                 }
-                string reportFileName = reportManager.SaveReportOnDisc(reportContent);
+                string reportFileName = reportManager.SaveReportOnDisc(reportContent, pArgs.TestCategory);
                 
                 //Print all ok on screen if no errors or warnings were written
                 if (!Output.ErrorWarningWasWritten)

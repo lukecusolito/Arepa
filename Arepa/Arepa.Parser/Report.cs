@@ -265,11 +265,12 @@ namespace Arepa.Parser
         /// </summary>
         /// <param name="htmlContent">content of the file</param>
         /// <returns>Report file name</returns>
-        public string SaveReportOnDisc(string htmlContent)
+        public string SaveReportOnDisc(string htmlContent, string testCategory)
         {
             DateTime now = DateTime.Now;
+            string category = string.IsNullOrWhiteSpace(testCategory) ? string.Empty : testCategory.Replace(" ", string.Empty) + "_";
             string reportsDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Reports\";
-            string reportFileName = reportsDirectory + "ArepaReport_" + reportProject.Name.Replace(" ", string.Empty) + "_" +
+            string reportFileName = reportsDirectory + "ArepaReport_" + reportProject.Name.Replace(" ", string.Empty) + "_" + category +
                 now.Year + "-" + now.Month + "-" + now.Day + "_" + now.Hour + "_" + now.Minute + "_" + now.Second + ".html";
 
             //Ensures the directory exist
