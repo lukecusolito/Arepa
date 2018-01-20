@@ -171,7 +171,7 @@
 				<th class="summary">Total features</th>
 				<th class="summary">Total scenarios</th>
 				<th class="summary">Scenarios passed</th>
-				<th class="summary" colspan="2">Success rate</th>
+				<th class="summary">Success rate</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -179,10 +179,14 @@
 				<td class="summary" align="center">[SummaryTotalFeatures]</td>
 				<td class="summary" align="center">[SummaryTotalScenarios]</td>
 				<td class="summary" align="center">[SummaryScenariosPassed]</td>
-				<td class="summary" align="center">[SummarySuccessRate]</td>
-				<td class="summary" align="left">
-					<div style="background-color: #FF0000; height: 20px; width: 200px; ">
-						<div class="greenBar[SummaryScenariosPassed]" style="background-color: #00FF00; height: 20px; width: [SummarySuccessRate];">&nbsp;</div>
+				<td class="summary" align="center" style="text-align: center;">
+					<div style="display: inline-block;">
+						<div style="display: inline; float: left;">
+							[SummarySuccessRate]&nbsp;
+						</div>
+						<div style="background-color: #FF0000; height: 20px; width: 200px; display: inline; float: left;">
+							<div class="greenBar[SummaryScenariosPassed]" style="background-color: #00FF00; height: 20px; width: [SummarySuccessRate];">&nbsp;</div>
+						</div>
 					</div>
 				</td>
 			  </tr>
