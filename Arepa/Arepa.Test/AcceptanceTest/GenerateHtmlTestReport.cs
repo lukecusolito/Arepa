@@ -389,7 +389,7 @@ namespace Arepa.Test.AcceptanceTest
             //When (Act)
             Report r = new Report(p);
             string reportContent = r.PrepareReportContent(scenarioTemplate, featureTemplate, testReportTemplate);
-            string reportFileName = r.SaveReportOnDisc(reportContent);
+            string reportFileName = r.SaveReportOnDisc(reportContent, string.Empty);
             //Cleaning test up
             File.Delete(reportFileName);
 
@@ -544,7 +544,7 @@ namespace Arepa.Test.AcceptanceTest
             Project projectTested = new Project();
             
             projectTested = configParser.ParseDocumentationFile(projectTested, documentationFile);
-            projectTested = configParser.ParseMSTestFile(projectTested, msTestFile);
+            projectTested = configParser.ParseMSTestFile(projectTested, msTestFile, string.Empty);
 
             //Then (Assert)
             Assert.AreEqual("Mock &lt;h1&gt;Test&lt;/h1&gt;", projectTested.Name, "Project name is not encoded properly");

@@ -71,13 +71,13 @@ namespace Arepa.Parser
                 StringBuilder sb = new StringBuilder();
                 string[] lines = value.Split(Environment.NewLine.ToCharArray());
 
-                //Replace new lines by <br> (all except the last one)
+                //Replace new lines by <br> (all except the last one). Add <strong> tag
                 for (int i = 0; i < lines.Length; i++)
                 {
                     if (i < lines.Length - 1)
-                        sb.Append(lines[i].Trim() + @"<br/>");
+                        sb.Append(WrapGherkinWithStrongTag(lines[i].Trim()) + @"<br/>");
                     else
-                        sb.Append(lines[i].Trim());
+                        sb.Append(WrapGherkinWithStrongTag(lines[i].Trim()));
                 }
                 value = sb.ToString();
             }
@@ -93,6 +93,25 @@ namespace Arepa.Parser
         public static string HtmlEncode(this string value)
         {
             return System.Net.WebUtility.HtmlEncode(value);
+        }
+
+        private static string WrapGherkinWithStrongTag(string line)
+        {
+            string newLine = string.Empty;
+            List<string> tags = new List<string>() { "As", "I", "So", "Given", "When", "Then", "And" };
+
+            const string templateBold = "<strong>{0}</strong>";
+            foreach (var tag in tags)
+            {
+                if (line.StartsWith(tag, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    int place = line.IndexOf(tag);
+                    newLine = line.Remove(place, tag.Length).Insert(place, string.Format(templateBold, tag));
+                    break;
+                }
+            }
+
+            return newLine;
         }
     }
 

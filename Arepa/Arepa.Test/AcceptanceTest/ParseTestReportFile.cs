@@ -119,7 +119,7 @@ namespace Arepa.Test.AcceptanceTest
                 msg = e.MsgRaised;
             };
 
-            projectTested = configParser.ParseMSTestFile(projectTested, testReportFile);
+            projectTested = configParser.ParseMSTestFile(projectTested, testReportFile, string.Empty);
 
 
             //Then (Assert)
@@ -151,7 +151,7 @@ namespace Arepa.Test.AcceptanceTest
 
             //When (Act)           
             FileParser fp = new FileParser();
-            pResult = fp.ParseMSTestFile(pResult, testReportFile);
+            pResult = fp.ParseMSTestFile(pResult, testReportFile, string.Empty);
 
             //Then (Assert)
             Assert.AreEqual("Local", pResult.Name);
@@ -177,7 +177,7 @@ namespace Arepa.Test.AcceptanceTest
 
             //When (Act)           
             FileParser fp = new FileParser();
-            pResult = fp.ParseMSTestFile(pResult, testReportFile);
+            pResult = fp.ParseMSTestFile(pResult, testReportFile, string.Empty);
 
             //Then (Assert)
             int totalScenariosPassed = 0;
@@ -209,7 +209,7 @@ namespace Arepa.Test.AcceptanceTest
 
             //When (Act)          
             FileParser fp = new FileParser();
-            pResult = fp.ParseMSTestFile(pResult, testReportFile);
+            pResult = fp.ParseMSTestFile(pResult, testReportFile, string.Empty);
 
             //Then (Assert)
             foreach (Feature f in pResult.Features)
@@ -252,7 +252,7 @@ namespace Arepa.Test.AcceptanceTest
 
             //When (Act)           
             FileParser fp = new FileParser();
-            pResult = fp.ParseMSTestFile(pResult, testReportFile);
+            pResult = fp.ParseMSTestFile(pResult, testReportFile, string.Empty);
 
             //Then (Assert)
             foreach (Feature f in pResult.Features)
@@ -296,7 +296,7 @@ namespace Arepa.Test.AcceptanceTest
                 msg = e.MsgRaised;
             };
 
-            badProject = fp.ParseMSTestFile(badProject, testReportFile);
+            badProject = fp.ParseMSTestFile(badProject, testReportFile, string.Empty);
 
 
             //Then (Assert)
@@ -327,7 +327,7 @@ namespace Arepa.Test.AcceptanceTest
             //When (Act)
             Project p = new Project();
             FileParser fp = new FileParser();
-            p = fp.ParseMSTestFile(p, testReportFile);
+            p = fp.ParseMSTestFile(p, testReportFile, string.Empty);
 
             //Then (Assert)
             Assert.IsFalse(string.IsNullOrEmpty(p.Name));
