@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArepaRunner"
         mc:Ignorable="d"
-        Title="Arepa Runner" Height="466" Width="688" ResizeMode="NoResize">
+        Title="Arepa Runner" Height="466" Width="688" ResizeMode="NoResize" Icon="Images/logo.ico">
     
     <Grid>
         <TextBox x:Name="txt_TestCategory" HorizontalAlignment="Left" Height="23" Margin="157,14,0,0" VerticalAlignment="Top" Width="430"/>
