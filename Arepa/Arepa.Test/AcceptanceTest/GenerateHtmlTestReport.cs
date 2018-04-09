@@ -81,7 +81,7 @@ namespace Arepa.Test.AcceptanceTest
         /// When the template is read
         /// Then the template content should be replaced with the scenario values on memory
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\HtmlTestReport\\ValidReportTemplates.csv", "ValidReportTemplates#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\HtmlTestReport\\ValidReportTemplates.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "ValidReportTemplates.csv", "ValidReportTemplates#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\HtmlTestReport\\ValidReportTemplates.csv"), TestMethod]
         public void AssignValuesToTheScenarioTemplate()
         {
             //Given (Arrange)
@@ -232,7 +232,7 @@ namespace Arepa.Test.AcceptanceTest
         /// When the template is read
         /// Then the template content should be replaced with the feature values
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\HtmlTestReport\\ValidReportTemplates.csv", "ValidReportTemplates#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\HtmlTestReport\\ValidReportTemplates.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "ValidReportTemplates.csv", "ValidReportTemplates#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\HtmlTestReport\\ValidReportTemplates.csv"), TestMethod]
         public void AssignValuesToTheFeatureTemplate()
         {
             //Given (Arrange)
@@ -321,7 +321,7 @@ namespace Arepa.Test.AcceptanceTest
         /// When the template is read
         /// Then the template content should be replaced with the feature values
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\HtmlTestReport\\ValidReportTemplates.csv", "ValidReportTemplates#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\HtmlTestReport\\ValidReportTemplates.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "ValidReportTemplates.csv", "ValidReportTemplates#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\HtmlTestReport\\ValidReportTemplates.csv"), TestMethod]
         public void AssignValuesToTheTestReportTemplate()
         {
             //Given (Arrange)

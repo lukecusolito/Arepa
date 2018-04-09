@@ -79,7 +79,7 @@ namespace Arepa.Test.AcceptanceTest
         /// When there are not valid arguments
         /// Then an error should be raised
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\Console\\InvalidArguments.csv", "InvalidArguments#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\InvalidArguments.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "InvalidArguments.csv", "InvalidArguments#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\Console\\InvalidArguments.csv"), TestMethod]
         public void DetectIfArgumentsEnteredInTheConsoleAreValid()
         {
             //Given (Arrange)
@@ -122,7 +122,7 @@ namespace Arepa.Test.AcceptanceTest
         /// Then an object with the ProjectFileName should be returned
         /// And an object with the Test Report File Name should be returned
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\Console\\ValidArguments.csv", "ValidArguments#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\Console\\ValidArguments.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "ValidArguments.csv", "ValidArguments#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\Console\\ValidArguments.csv"), TestMethod]
         public void AcceptValidArguments()
         {
             //Given (Arrange)
@@ -162,7 +162,7 @@ namespace Arepa.Test.AcceptanceTest
         /// OR not project file is found
         /// Then an a proper error should be raised
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\Console\\InvalidProjectDirectories.csv", "InvalidProjectDirectories#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\Console\\InvalidProjectDirectories.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "InvalidProjectDirectories.csv", "InvalidProjectDirectories#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\Console\\InvalidProjectDirectories.csv"), TestMethod]
         public void DetectIfProjectDirectoryOrFileExist()
         {
             //Given (Arrange)
@@ -195,7 +195,7 @@ namespace Arepa.Test.AcceptanceTest
         /// OR not test file is found
         /// Then an a proper error should be raised
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\Console\\InvalidTestDirectories.csv", "InvalidTestDirectories#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\Console\\InvalidTestDirectories.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "InvalidTestDirectories.csv", "InvalidTestDirectories#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\Console\\InvalidTestDirectories.csv"), TestMethod]
         public void DetectIfTestDirectoryOrFileExist()
         {
             //Given (Arrange)
@@ -227,7 +227,7 @@ namespace Arepa.Test.AcceptanceTest
         /// When a valid project file exist on it
         /// Then the project file name should be returned
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\Console\\ValidProjectDirectories.csv", "ValidProjectDirectories#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\Console\\ValidProjectDirectories.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "ValidProjectDirectories.csv", "ValidProjectDirectories#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\Console\\ValidProjectDirectories.csv"), TestMethod]
         public void GetTheProjectFileName()
         {
             //Given (Arrange)

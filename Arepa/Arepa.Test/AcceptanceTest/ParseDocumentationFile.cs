@@ -139,7 +139,7 @@ namespace Arepa.Test.AcceptanceTest
         /// Or the user story doesn't exist
         /// Then an error should be raised
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\DocumentationFiles\\DocumentationFilesBadFeature.csv", "DocumentationFilesBadFeature#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\DocumentationFilesBadFeature.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "DocumentationFilesBadFeature.csv", "DocumentationFilesBadFeature#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\DocumentationFiles\\DocumentationFilesBadFeature.csv"), TestMethod]
         public void DetectIfTitleAndUserStoryExistInFeaturesDocumentFile()
         {
             //Given (Arrange)
@@ -159,7 +159,7 @@ namespace Arepa.Test.AcceptanceTest
         /// Or the scenario content doesn't exist
         /// Then an error should be raised
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\DocumentationFiles\\DocumentationFilesBadScenario.csv", "DocumentationFilesBadScenario#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\DocumentationFilesBadScenario.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "DocumentationFilesBadScenario.csv", "DocumentationFilesBadScenario#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\DocumentationFiles\\DocumentationFilesBadScenario.csv"), TestMethod]
         public void DetectIfTitleAndScenarioContentExistInScenariosDocumentFile()
         {
             //Given (Arrange)
@@ -179,7 +179,7 @@ namespace Arepa.Test.AcceptanceTest
         /// Then Features should be on objects in memory
         /// And Scenarios should be on objects in memory
         /// </remarks>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Sources\\DocumentationFiles\\ValidDocumentationFiles.csv", "ValidDocumentationFiles#csv", DataAccessMethod.Sequential), DeploymentItem("Arepa.Test\\Sources\\ValidDocumentationFiles.csv"), TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "ValidDocumentationFiles.csv", "ValidDocumentationFiles#csv", DataAccessMethod.Sequential), DeploymentItem("Sources\\DocumentationFiles\\ValidDocumentationFiles.csv"), TestMethod]
         public void ConvertDataInDocumentationFileIntoObjects()
         {
             //Given (Arrange)
