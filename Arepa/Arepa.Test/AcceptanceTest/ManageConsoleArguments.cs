@@ -127,6 +127,7 @@ namespace Arepa.Test.AcceptanceTest
         {
             //Given (Arrange)
             string[] args = TestContext.DataRow["Argument"].ToString().Split(' ');
+            
             //Assign the right mock path to the arguments
             int i = 0;
             foreach (string argument in args)
@@ -135,6 +136,8 @@ namespace Arepa.Test.AcceptanceTest
                 {
                     case "-projectdir":
                         args[i + 1] = TestEnvironment.MockPath + args[i + 1];
+                        //Update last write times on csproj files so correct one is selected for tests
+                        File.SetLastWriteTime($"{args[i + 1]}\\{TestContext.DataRow["ProjectFileNameExpected"].ToString()}", DateTime.Now);
                         break;
                     case "-testdir":
                         args[i + 1] = TestEnvironment.MockPath + args[i + 1];
