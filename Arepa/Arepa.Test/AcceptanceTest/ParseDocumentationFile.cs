@@ -258,30 +258,25 @@ namespace Arepa.Test.AcceptanceTest
         /// <param name="errorMsgExpected">Error message expected</param>
         private static void ParseDocumentationFileWhenThen(string documentationFile, string errorMsgExpected)
         {
-
             //When (Act)
             FileParser configParser = new FileParser();
             Project projectTested = new Project();
 
             Message msg = null;
-            configParser.MessageRaised += delegate(object sender, MessageEventArgs e)
+            configParser.MessageRaised += delegate (object sender, MessageEventArgs e)
             {
                 msg = e.MsgRaised;
             };
 
             projectTested = configParser.ParseDocumentationFile(projectTested, documentationFile);
 
-
             //Then (Assert)
             Assert.IsTrue(projectTested.Error);
             Assert.AreEqual(MessageType.Error, msg.TypeMessage);
             //Ensures it is picking the right error message
-            Regex s = new Regex(TestEnvironment.PrepareStringForRegularExpression(errorMsgExpected,true));
+            Regex s = new Regex(TestEnvironment.PrepareStringForRegularExpression(errorMsgExpected, true));
             Assert.IsTrue(s.IsMatch(msg.Description));
         }
-
-        
-
         #endregion
     }
 }

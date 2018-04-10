@@ -154,8 +154,6 @@ namespace Arepa.Test.AcceptanceTest
             pResult = fp.ParseMSTestFile(pResult, testReportFile, string.Empty);
 
             //Then (Assert)
-            Assert.AreEqual("Local", pResult.Name);
-            Assert.AreEqual("These are default test settings for a local test run.", pResult.Description);
             Assert.AreEqual(Convert.ToDateTime("2012-03-20T11:31:31.9837420+11:00"), pResult.StartTime);
             Assert.AreEqual(Convert.ToDateTime("2012-03-20T11:31:38.1425953+11:00"), pResult.FinishTime);
         }
@@ -309,6 +307,8 @@ namespace Arepa.Test.AcceptanceTest
 
         }
 
+        // TODO: ReportDescription is depricated (Code commented in solution). Confirm and remove. Replaced already by app name and test category.
+        /*
         /// <summary>
         /// @Scenario: Test project without test settings
         /// </summary>
@@ -334,6 +334,6 @@ namespace Arepa.Test.AcceptanceTest
             Assert.AreEqual(resourceMan.Resources.GetString("StringReportDefaultDescription"), p.Description, "Project description is not replace by the default description on projects without testsettings");
 
         }
-
+        */
     }
 }

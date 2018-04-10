@@ -283,7 +283,7 @@ namespace Arepa.Parser
                     }
                 }
 
-                if ((testCategory != null && category != string.Empty & testCategory == category) || (testCategory == null))
+                if ((string.IsNullOrWhiteSpace(testCategory) || (!string.IsNullOrWhiteSpace(category) && testCategory == category)))
                 {
                     //Gets the Method name from the Test method
                     XElement tesMethod = ut.Descendants().Where(x => x.Name.LocalName == testTestMethodTag).FirstOrDefault<XElement>();

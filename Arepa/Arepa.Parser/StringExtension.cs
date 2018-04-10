@@ -105,7 +105,7 @@ namespace Arepa.Parser
             {
                 if (line.StartsWith(tag, StringComparison.InvariantCultureIgnoreCase))
                 {
-                    int place = line.IndexOf(tag);
+                    int place = line.IndexOf(tag, StringComparison.InvariantCultureIgnoreCase);
                     newLine = line.Remove(place, tag.Length).Insert(place, string.Format(templateBold, tag));
                     break;
                 }

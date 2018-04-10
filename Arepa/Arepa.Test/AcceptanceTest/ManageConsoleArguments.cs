@@ -236,6 +236,10 @@ namespace Arepa.Test.AcceptanceTest
             //Given (Arrange)
             string projectDir = TestEnvironment.MockPath + TestContext.DataRow["ProjectDirectory"];
             FileInfo fi = new FileInfo(projectDir + TestContext.DataRow["ProjectFileExpected"]);
+
+            // Set last updated time for expected project file.
+            File.SetLastWriteTime(fi.FullName, DateTime.Now);
+
             string projectFileNameExpected = fi.FullName;
            
             //When (Act)
