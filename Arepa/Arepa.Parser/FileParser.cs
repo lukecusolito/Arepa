@@ -271,19 +271,18 @@ namespace Arepa.Parser
                 {
                     var cat = ut
                         .Elements()
-                        .Where(e => e.Name.LocalName == testTestCategoryTag)
-                        .FirstOrDefault();
+                        .FirstOrDefault(e => e.Name.LocalName == testTestCategoryTag);
                     if (cat != null)
                     {
-                        var catItem = cat.Elements()
-                            .Where(e => e.Name.LocalName == testTestCategoryItemTag)
-                            .FirstOrDefault();
-                        category = catItem.Attribute(testTestCategoryTag).Value;
-                        
+                        var catItem = cat
+                            .Elements()
+                            .FirstOrDefault(e => e.Name.LocalName == testTestCategoryItemTag);
+
+                        category = catItem.Attribute(testTestCategoryTag).Value;                        
                     }
                 }
 
-                if ((string.IsNullOrWhiteSpace(testCategory) || (!string.IsNullOrWhiteSpace(category) && testCategory == category)))
+                if ((string.IsNullOrWhiteSpace(testCategory) || (!string.IsNullOrWhiteSpace(category) && testCategory.Equals(category, StringComparison.InvariantCultureIgnoreCase))))
                 {
                     //Gets the Method name from the Test method
                     XElement tesMethod = ut.Descendants().Where(x => x.Name.LocalName == testTestMethodTag).FirstOrDefault<XElement>();
