@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ArepaRunner
+namespace ArepaRunner.ViewModel
 {
     public class ViewModelBase : INotifyPropertyChanged
     {

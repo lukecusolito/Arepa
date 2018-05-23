@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArepaRunner.ViewModel;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 
-namespace ArepaRunner
+namespace ArepaRunner.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -30,8 +31,5 @@ namespace ArepaRunner
         {
             txt_Output.ScrollToEnd();
         }
-
-        #region Helper Methods
-        #endregion
     }
 }
