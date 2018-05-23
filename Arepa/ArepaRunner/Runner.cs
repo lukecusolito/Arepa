@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArepaRunner
 {
     public class Runner
     {
-        private static TextOutput outputBox;
-        public static void Start(ProgramArguments args, TextOutput output)
+        private static Action<string> _logInformation;
+        public static void Start(ProgramArguments args, Action<string> logInformation)
         {
-            outputBox = output;
+            _logInformation = logInformation;
 
             Build(args.MSBuildLocation, args.ProjectFile);
             Test(args.OutputDir, args.AssemblyFile, args.MSTestLocation, args.TestSettings);
@@ -94,7 +89,7 @@ namespace ArepaRunner
             Console.WriteLine(e.Data);
             if(!String.IsNullOrEmpty(e.Data))
             {
-                outputBox.OutputString = outputBox.OutputString + e.Data + Environment.NewLine;
+                _logInformation(e.Data + Environment.NewLine);
             }
         }
     }
