@@ -266,8 +266,9 @@ namespace Arepa.Parser
 
             foreach (XElement ut in unitTest)
             {
+                List<string> categories = new List<string>();
                 string category = string.Empty;
-                if (testCategory != null)
+                if (!string.IsNullOrWhiteSpace(testCategory))
                 {
                     var cat = ut
                         .Elements()
@@ -276,13 +277,13 @@ namespace Arepa.Parser
                     {
                         var catItem = cat
                             .Elements()
-                            .FirstOrDefault(e => e.Name.LocalName == testTestCategoryItemTag);
+                            .Where(e => e.Name.LocalName == testTestCategoryItemTag);
 
-                        category = catItem.Attribute(testTestCategoryTag).Value;                        
+                        categories.AddRange(catItem.Select(y => y.Attribute(testTestCategoryTag).Value));              
                     }
                 }
 
-                if ((string.IsNullOrWhiteSpace(testCategory) || (!string.IsNullOrWhiteSpace(category) && testCategory.Equals(category, StringComparison.InvariantCultureIgnoreCase))))
+                if (string.IsNullOrWhiteSpace(testCategory) || categories.Contains(testCategory))
                 {
                     //Gets the Method name from the Test method
                     XElement tesMethod = ut.Descendants().Where(x => x.Name.LocalName == testTestMethodTag).FirstOrDefault<XElement>();
