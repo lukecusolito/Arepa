@@ -1,2 +1,2 @@
-External tool argument
+External tool argument for ArepaRunner
 -PROJECTDIR $(ProjectDir) -OUTPUTDIR $(BinDir)
